@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querys</title>
+
+
+    <style>
+        @media only screen and (max-width: 480px) {
+            .sm-0 {
+                /* we will not display anything with the class .sm-0 if the screen's width is less than 480px */
+                display: none;
+            }
+
+            .sm-1 { width: 40%; }
+            .sm-2 { width: 50%; }
+            .sm-3 { width: 70%; }
+            .sm-4 { width: 80%; }
+            .sm-5 { width: 90%; }
+            .sm-6 { width: 100%; }
+
+        }
+
+        @media only screen and (min-width: 481px) {
+            .md-0 {
+                /* we will not display anything with the class .sm-0 if the screen's width is less than 480px */
+                display: none;
+            }
+                                    
+            .md-1 { width: 20%; }
+            .md-2 { width: 30%; }
+            .md-3 { width: 40%; }
+            .md-4 { width: 50%; }
+            .md-5 { width: 60%; }
+            .md-6 { width: 70%; }
+         
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="col sm-0 med-1">
+        <h5>Did you know?</h5>
+        <p>If you could fold a piece of paper 42 times, it would be tall enough to reach the moon.</p>
+    </div>
+
+    <h1 class="md-4 sm-6"> SOY EN MEDIANA 50% y en PEQUEÑA 100%</h1>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12"></div>
+        <div class="col-md-6 col-sm-12"></div>
+    </div>
+
+</body>
+
+</html>
